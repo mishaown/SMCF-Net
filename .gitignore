@@ -1,0 +1,50 @@
+# Local data and generated outputs.
+/data/
+/weights/
+/results/
+/publication_ready/
+/outputs/
+/artifacts/
+/logs/
+/checkpoints/
+/private/
+/run.py
+/organize_results.py
+/sync_weights.py
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.log
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.zip
+*.tar*
+# CSVs are public only when they are fixed split manifests.
+*.csv
+!/splits/**/*.csv
+# Credentials and keys.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+*token*
+# Runtime and local environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+/build/
+/dist/

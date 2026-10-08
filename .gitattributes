@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve fixed-split CSV bytes and provenance hashes.
+splits/**/*.csv -text

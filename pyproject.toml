@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smcf-net"
+version = "0.1.0"
+description = "SMCF-Net training for bi-temporal SAR flood segmentation"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "einops>=0.7,<1",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.24,<2.1",
+  "opencv-python-headless>=4.8,<5",
+  "PyYAML>=6,<7",
+  "timm>=0.9,<2",
+  "tifffile>=2023.4",
+  "torch>=2.2,<3",
+  "torchvision>=0.17,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.6,<1"]
+
+[tool.setuptools.packages.find]
+include = ["benchmark*", "models*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
